@@ -1,9 +1,13 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ASPNET_Portfolio.Default" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <!--<bs3:Jumbotron runat="server" ID="Jumbotron"></bs3:Jumbotron>-->
+<!-- 
+File name: Default.aspx
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: Default page
+-->
     <div class="container" runat="server">
-        <div class="col-md-8 col-md-offset-2 panel ">
+        <div class="col-md-8 col-md-offset-2 panel">
             <div class="text-vertical-center">
                 <h1 class="logo">Hae Yeon Kang</h1>
                 <p>

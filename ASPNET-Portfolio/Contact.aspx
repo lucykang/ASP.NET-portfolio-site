@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ASPNET_Portfolio.Contact" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<!-- 
+File name: Contact.aspx
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: Contact page for user to send me email via contact form.
+-->
 <main class="main">
     <div class="container">
         <div class="row">
@@ -9,10 +14,11 @@
             </div>
             <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-7 col-xs-offset-2 col-xs-8 text-vertical-center">
                 <div id="alertMessage" runat="server">
-                    <h5><em>Please fill out this form to send me an email.</em></h5>
+                    <h4><em>Please fill out this form to send me an email.</em></h4>
                 </div>
                 
                 <br/>
+                <!-- Contact form start here -->
                 <div class="form-group">
                     <div class="input-group input-group-md">
                         <span class="input-group-addon" id="fullname-sizing-addon2"><i class="fa fa-user"></i></span>

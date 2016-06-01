@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="Project" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Project.aspx.cs" Inherits="ASPNET_Portfolio.Project" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<!-- 
+File name: Project.aspx
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: Portfolio page that displays my projects
+-->
     <main class="main">
         <div class="container">
             <div class="page-header">
@@ -8,6 +14,7 @@
             </div>
 
             <!-- Projects -->
+            <!-- first row -->
             <div class="row">
                 <div class="col-md-6 portfolio-item">
                     <a href="http://managesupport-part4.azurewebsites.net/"><img class="img-responsive" src="Assets/images/manage-support.png" alt="Incident Management Site Screenshot"></a>
@@ -20,8 +27,7 @@
                     <p>Portfolio site built in Node.js and Express</p>
                 </div>
             </div>
-            <!-- end of row -->
-
+            <!-- second row -->
             <div class="row">
                 <div class="col-md-6 portfolio-item">
                     <a href="https://github.com/lucykang/Java-GUIversion"><img class="img-responsive" src="Assets/images/java-project.png" alt="Retail Management System Screenshot"></a>
@@ -34,9 +40,7 @@
                     <p>This program allows users to find a video in the embeded browser and download the video in different resolutions. Please <a href="Assets/YoutubeDownloader.exe">click here</a> to download the program.</p>
                 </div>
             </div>
-            <!-- end of first row -->
-
-            <!-- Projects -->
+            <!-- third row -->
             <div class="row">
                 <div class="col-md-6 portfolio-item">
                     <a href="https://github.com/lucykang/Twitter-Extractor"><img class="img-responsive" src="Assets/images/twitter-newsfeeder.png" alt="Twitter Extractor Screenshot"></a>
@@ -49,7 +53,7 @@
                     <p>There are more projects to come! Please check out my Github for more projects!</p>
                 </div>
             </div>
-            <!-- end of second row -->
+            <!-- end of third row -->
         </div>
     </main>
 </asp:Content>

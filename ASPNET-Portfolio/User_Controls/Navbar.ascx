@@ -1,4 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="ASPNET_Portfolio.Navbar" %>
+
+<!-- 
+File name: Navbar.ascx
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: navbar for all pages except the default page
+-->
+
 <nav class="navbar navbar-transparent" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,12 +21,13 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left">
-                <li id="home" runat="server"><a href="Default.aspx">HOME</a></li>
+            <ul class="nav navbar-nav navbar-left">                
+                <!-- <li id="home" runat="server"><a href="Default.aspx">HOME</a></li>-->
                 <li id="about" runat="server"><a href="About.aspx">ABOUT</a></li>
+                <li id="service" runat="server"><a href="Service.aspx">SERVICES</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li id="project" runat="server"><a href="Project.aspx">PROJECTS</a></li>
+                <li id="project" runat="server"><a href="Project.aspx">PORTFOLIO</a></li>
                 <li id="contact" runat="server"><a href="Contact.aspx">CONTACT</a></li>
             </ul>
         </div>

@@ -10,6 +10,12 @@ using System.Net.Mail;
 using SendGrid;
 using Newtonsoft.Json.Linq;
 
+/*
+File name: Contact.aspx.cs
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: C# file to control the form in Contact page
+*/
 
 namespace ASPNET_Portfolio
 {
@@ -25,6 +31,23 @@ namespace ASPNET_Portfolio
             
         }
 
+        /**
+         * This event handler method will reset the form when reset button is clicked.
+         * @return void
+         */
+        protected void ResetBtn_Click(object sender, EventArgs e)
+        {
+            //clear all the fields.
+            FullNameTextBox.Text = "";
+            CompanyTextBox.Text = "";
+            EmailTextBox.Text = "";
+            PhoneNumberTextBox.Text = "";
+            MessageTextBox.Text = "";
+        }
+        /**
+         * This event handler method will process the contact form when submit button is clicked.
+         * @return void
+         */
         protected void SubmitBtn_Click(object sender, EventArgs e)
         {
             // Test sending email
@@ -40,17 +63,13 @@ namespace ASPNET_Portfolio
             alertMessage.Attributes.Add("class", "alert alert-info");
             alertMessage.InnerHtml = "Your email was sent successfully!";
         }
-
-        protected void ResetBtn_Click(object sender, EventArgs e)
-        {
-            //clear all the fields.
-            FullNameTextBox.Text = "";
-            CompanyTextBox.Text = "";
-            EmailTextBox.Text = "";
-            PhoneNumberTextBox.Text = "";
-            MessageTextBox.Text = "";
-        }
-
+        
+        /**
+         * This method will create sendgrid web transport object from the credential
+         * and send email using DeliverAsync() from Sendgrid api
+         * @param SendGrid.SendGridMessage message
+         * @return void
+         */
         private static void SendAsync(SendGrid.SendGridMessage message)
         {
             // Create a Web transport for sending email.
@@ -61,6 +80,12 @@ namespace ASPNET_Portfolio
              
         }
 
+        /**
+         * This method will prepare the message by putting in information from the form.
+         * and will send the message to a method SendAsync to check the credential of Sendgrid.
+         * @param string to, string from, string fromName, string companyName, string phoneNum, string longMessage
+         * @return void
+         */
         private static void SendEmail(string to, string from, string fromName, string companyName, string phoneNum, string longMessage)
         {
             // Create the email object first, then add the properties.
@@ -80,6 +105,7 @@ namespace ASPNET_Portfolio
             myMessage.AddSubstitution("%tag%", subs);
             myMessage.AddSection("%type%", "とんこつ");
             */
+
             SendAsync(myMessage);
         }
     }

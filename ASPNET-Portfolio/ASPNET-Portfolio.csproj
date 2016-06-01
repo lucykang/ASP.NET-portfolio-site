@@ -95,6 +95,7 @@
     <Content Include="Assets\Assignment2.exe" />
     <Content Include="Assets\images\asp-net.png" />
     <Content Include="Assets\images\buildings.jpeg" />
+    <Content Include="Assets\images\chairs.jpg" />
     <Content Include="Assets\images\cms.png" />
     <Content Include="Assets\images\java-project.png" />
     <Content Include="Assets\images\manage-support.png" />
@@ -122,6 +123,7 @@
     <Content Include="Content\home-page.css" />
     <Content Include="packages.config" />
     <Content Include="Project.aspx" />
+    <Content Include="Service.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="Content\custom_fonts\Aaargh.ttf" />
@@ -224,6 +226,13 @@
     </Compile>
     <Compile Include="Project.aspx.designer.cs">
       <DependentUpon>Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>

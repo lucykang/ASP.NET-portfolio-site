@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="ASPNET_Portfolio.About" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<!--
+File name: About.aspx
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: About page that describe my background.
+-->
     <main class="main">
         <div class="container">
             <div class="page-header">
@@ -24,6 +29,7 @@
             </div>
             
             <!-- qualifications section -->
+            <!-- first row -->
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="page-header">Qualifications</h2>
@@ -44,6 +50,7 @@
                     <p>Continuous version control to manage projects in timely manner.</p>
                 </div>
             </div>
+            <!-- second row -->
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 text-center">
                     <img class="img-center" src="Assets/images/secure.png" height="200" alt="Application Security">

@@ -2,10 +2,19 @@
 <%@ Register Src="~/User_Controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
 <%@ Register Src="~/User_Controls/Footer.ascx" TagName="Footer" TagPrefix="bs3" %>
 
+
+<!-- 
+File name: Site.Master
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: Master page for the entire website
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head runat="server">
+    <!-- Meta Section -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,9 +33,9 @@
 <body id="full" runat="server">
         <form class="body-back" id="form1" runat="server">
             <bs3:Navbar id="navbarHidden" runat="server" />
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
-                <bs3:Footer id="footerHidden" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <bs3:Footer id="footerHidden" runat="server" />
         </form>
 
     <!-- Javascript Section -->

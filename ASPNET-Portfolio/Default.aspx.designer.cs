@@ -7,20 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASPNET_Portfolio
-{
-
-
-    public partial class Default
-    {
-
-        /// <summary>
-        /// Jumbotron control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ASPNET_Portfolio.User_Controls.Jumbotron Jumbotron;
+namespace ASPNET_Portfolio {
+    
+    
+    public partial class Default {
     }
 }

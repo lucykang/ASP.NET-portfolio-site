@@ -6,10 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author Lucy Kang
- * @date 2016-05-26
- * 
- */
+File name: Navbar.ascx.cs
+Author's name: Hae Yeon Kang (Lucy)
+web site name: Hae Yeon's Portfolio Website
+file description: C# file to control presentation of Navbar
+*/
 
 namespace ASPNET_Portfolio
 {
@@ -32,6 +33,15 @@ namespace ASPNET_Portfolio
             {
                 case "Home":
                     home.Attributes.Add("class", "active");
+                    break;
+                case "About":
+                    about.Attributes.Add("class", "active");
+                    break;
+                case "Service":
+                    service.Attributes.Add("class", "active");
+                    break;
+                case "Project":
+                    project.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");
