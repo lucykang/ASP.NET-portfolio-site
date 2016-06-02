@@ -54,13 +54,14 @@ body{
     z-index: 3;
 }
 .panel {
-    margin-top: 30px;
+    margin-top: 130px;
 	background-color: rgba(255, 255, 255, 0.7);
     font-family: raleway_thin-webfont;
 }
 
 /* Index page */
 .panel .text-vertical-center {
+  
     margin: 150px 0;
     text-align: center;
     vertical-align: middle;
