@@ -51,7 +51,7 @@ namespace ASPNET_Portfolio
         protected void SubmitBtn_Click(object sender, EventArgs e)
         {
             // Test sending email
-            var to = "lucy.h.kang@gmail.com";
+            var to = "nobody@gmail.com";
             var from = EmailTextBox.Text;
             var fromName = FullNameTextBox.Text;
             var companyName = CompanyTextBox.Text;
@@ -73,7 +73,7 @@ namespace ASPNET_Portfolio
         private static void SendAsync(SendGrid.SendGridMessage message)
         {
             // Create a Web transport for sending email.
-            var transportWeb = new SendGrid.Web(new NetworkCredential("lucyhkang", "kang8344"));
+            var transportWeb = new SendGrid.Web(new NetworkCredential("username", "password"));
 
             // Send the email.
             transportWeb.DeliverAsync(message);
