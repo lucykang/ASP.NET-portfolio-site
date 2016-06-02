@@ -14,7 +14,7 @@ file description: Contact page for user to send me email via contact form.
             </div>
             <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-7 col-xs-offset-2 col-xs-8 text-vertical-center">
                 <div id="alertMessage" runat="server">
-                    <h4><em>Please fill out this form to send me an email.</em></h4>
+                    <em>Please fill out this form to send me an email.</em>
                 </div>
                 
                 <br/>
